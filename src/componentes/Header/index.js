@@ -3,6 +3,7 @@ import Logo from '../../componentes/Logo';
 import OpcaoHeader from '../../componentes/OpcoesHeader';
 import IconesHeader from '../../componentes/IconesHeader';
 import slyled from 'styled-components'
+import { Link } from 'react-router-dom';
 
 const HeaderContainer = slyled.header`
     background-color: #FFF;
@@ -14,7 +15,9 @@ const HeaderContainer = slyled.header`
 function Header(){
     return (
         <HeaderContainer>
-            <Logo/>
+            <Link to="/"> 
+              <Logo/>
+            </Link>
             <OpcaoHeader/>
             <IconesHeader/>
         </HeaderContainer>
